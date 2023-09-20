@@ -7,14 +7,20 @@ input {
     border-radius: 7px;
     box-shadow: 0px 2px 10px -7px 
 }
-input{
+body{
+    background-color: hsl(0, 0%, 94%);  
+}
+
+
+form input{
     width: 250px;
     height: 30px;
     border: 1px solid rgb(230, 229, 229);
     
 }
 button{
-    color: white;   
+    color: white; 
+
 }
 .form-container h3{
     margin-left: 5%;
@@ -22,47 +28,40 @@ button{
 .form-container button{
     background-color: rgb(101, 126, 91);
     border: 0px ;
-    margin-top: 5%;
-    margin-left: 5%;
-    padding-left: 5%;
+    
+   margin: 20px;
     padding-right: 5%;
     padding-top: 1%;
-    padding-bottom: 1%;    
+    padding-bottom: 1%;   
+    min-width: 100px; 
+
 }
 
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: row;
+    
 }
 
-.photo-logo{
+.photo,
+.card-div{
+    display: flex;
     flex-grow: 1;
-   
-}
-.photo-logo,
-.photo{
-    max-height: 100%;
-    min-width: 33%;
-  
-}
-.card-div {
 
-    position: absolute;
-    top: 25%;
-    width: 33vw;
-    min-height: 10%;
-    background-color: black;
-    opacity:0.5;
- 
- 
 }
+.photo{
+    height: 100vh;
+    width: 30%
+}
+
+
 .card-logo{
     color: aliceblue;
-
-    margin-top: auto;
+    align-self: center;
     margin-left: auto;
+    margin-right: auto;
+   
 
 }
 .form-container{
@@ -72,23 +71,25 @@ button{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    min-height: 100%;
 }
 .signup-card{
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     align-items: center;
-    height: 35%;
+    min-height: 35%;
     box-shadow: 0px 2px 10px -7px 
 }
-.signup-card ul{
-    display: flex;
-    flex-direction: row;
-    padding-left: 10%;
-    padding-top: 5%;
-}
-.signup-card ul li{
+
+.signup-card li{
     display: flex;
     flex-direction: column;
     padding-left: 10%;
+    margin-bottom: 20%;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
 }
