@@ -18,35 +18,35 @@
             </h3>
              
             <div class="signup-card">
-                <form action="to my url" method="post">
+                <form id="submit-form" action="to my url" method="post">
                     
                     <div class="content">
                         <ul style="list-style-type: none;">
                             <li>
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" placeholder="john">
+                                <input type="text" id="first_name" placeholder="john" required>
                             </li>
                             <li>
                                 <label for="Last_name">LAST NAME</label>
-                                <input type="text" id="Last_name" placeholder="Doe">
+                                <input type="text" id="Last_name" placeholder="Doe" required>
                             </li>
                             <li>
                                 <label for="email"> EMAIL</label>
-                                <input type="email" id="email" placeholder="johnDoe@example.com ">
+                                <input type="email" id="email" placeholder="johnDoe@example.com " required>
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label for="phone"> PHONE</label>
-                                <input type="number" id="phone" placeholder="000-000000000">
+                                <input type="text" id="phone" placeholder="000-0000000" required pattern="[0-9]{3}-[0-9]{7}">
                             </li>
                             <li>
                                 <label for="password">PASSWORD </label>
-                                <input type="password" id="password" placeholder="password here">                            
+                                <input type="password" id="password" placeholder="password here" required minlength="6">                            
                             </li>
                             <li>
                                 <label for="password_confirmation">CONFIRM PASSWORD </label>
-                                <input type="password" id="password_confirmation" placeholder="enter password again">                            
+                                <input type="password" id="password_confirmation" placeholder="enter password again" required required minlength="6">                            
                             </li>
 
                         </ul>
@@ -54,7 +54,7 @@
                 </form>
             </div> 
                 
-                <button type="submit"><strong>Create Account</strong></button>
+                <button type="submit" form="submit-form"><strong>Create Account</strong></button>
         
         </div>
 
