@@ -12,7 +12,7 @@ input {
 body{
     
     background-color: hsl(0, 0%, 94%);  
-    border: none;
+    margin: 0;
 }
 
 
