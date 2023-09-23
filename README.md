@@ -4,11 +4,11 @@ this project is from The Odin Project , in this project we are working with basi
 objectives of the project are as follows:
 
 _create a sign up form simillar to the example provided on https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
- -make sure the designe is well presented and doest break on different size screens (key note: mobile compatibility is not the main goal for this projectamd is not a priority)
+ .make sure the designe is well presented and doest break on different size screens (key note: mobile compatibility is not the main goal for this projectamd is not a priority)
  
 _create a sign up form in the desired format for this project 
- -styling should be simillar to the desired outcome
- -constrain the data the user can input
- -data validation appropriate for the data fields in use
- -intuativly indicate validity of the data through styling the form control input field
- -check that password and confirm password data input is matching using javascrips (this is an optional step)
+ .styling should be simillar to the desired outcome
+ .constrain the data the user can input
+ .data validation appropriate for the data fields in use
+ .intuativly indicate validity of the data through styling the form control input field
+ .check that password and confirm password data input is matching using javascrips (this is an optional step)
