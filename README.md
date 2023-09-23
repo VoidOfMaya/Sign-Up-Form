@@ -1,4 +1,4 @@
-# Sign-Up-Form
+# Sign-Up-Form project summery
 
 this project is from The Odin Project , in this project we are working with basic form controls  from creating to styling and validation of user input on the client side
 objectives of the project are as follows:
