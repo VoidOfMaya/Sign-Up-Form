@@ -135,7 +135,6 @@ form input{
 .content li{
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
     margin-bottom: 20%;
 }
 
