@@ -1,4 +1,5 @@
 
+/* web page default resaet*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 body,
 button,
@@ -13,102 +14,70 @@ body{
 }
 
 
-form input{
-    width: 250px;
-    height: 30px;
-    border: 1px solid #E5E7EB;
-    
-}
-button{
-    color: rgb(224, 247, 211); 
-
-}
-.form-container h3{
-    margin-left: 5%;
-}
-.form-container button{
-    background-color: #596D48;
-    border: 0px ;
-    
-    margin: 20px;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;   
-    min-width: 100px; 
-
-}
-.form-container button:hover{
-    background-color: #748d5e;
-    color: whit;
-    
-}
-
-.main-container{
+.main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    
+
+    
+
+}
+.left{
+    
+    flex-grow: 1;
+    background: url(photo/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    color:white;
+    min-width: 460px;
+    height: 100vh;
     
 }
 
-.photo,
-.card-div{
+.left .card{
     display: flex;
-    flex-grow: 1;
-
+    background-color: rgb(0, 0, 0, .5);
+    margin-top: 20vh;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.photo{
-    height: 100vh;
-    width: 30%
-}
-
-
-.card-logo{
-    color: aliceblue;
+.left .card h1{
+    display: flex;
     align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-   
-
+    margin: auto;
 }
-.form-container{
-    background-color: hsl(0, 0%, 94%);
-    flex-grow: 2;
+.left .card .logo{
+
+    height: 100px;
+    margin-right: auto;
+}
+.right{
+    flex-grow: 3;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    min-height: 100%;
 }
-.signup-card{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    min-height: 35%;
-    box-shadow: 0px 2px 10px -7px 
+.right .upper-text ,
+.right .bottom-text{
+    background-color: rgb(231, 231, 231);
+    flex-grow: 1;
 }
-
-.signup-card li{
+.right .upper-text{
     display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-    margin-bottom: 20%;
+    align-items: end;
 }
-
-.content{
-    display: flex;
+.right .bottom-text{
+    display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-input:focus {
-    outline-width: 0;
-    border-color: rgb(71, 166, 243);
-}
-input:focus:valid{
-    border-color: green;
-    
-}
-input:focus:invalid{
-    border-color: red;
-    
+.right .form-container{
+    flex-grow: 1;
+    background-color: white;
+    justify-self: center;
 }

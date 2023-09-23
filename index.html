@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
+    <title>Sign Up</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
-    <div class="main-container">
-        <div class="photo">
-            <img class="photo" src="photo/halie-west-25xggax4bSA-unsplash.jpg" alt="fruite" >
-
+    
+    <div class="main">
+        <!-- left side, banner and logo-->
+        <div class="left">
+            <div class="card">
+                <h1>ODINSON</h1>
+                <img class="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="fruite"/>
+         
+            </div>
         </div>
-        <div class="form-container">
-            <h3>this is not a real service!, you know you need calm , we know you need calm.
-            <strong>Sign up</strong> today and get more calm
-            </h3>
-             
-            <div class="signup-card">
+
+        <!-- right side, text and sign up form-->
+        <div class="right">
+            <div class="upper-text">
+                <h3>this is not a real service!, you know you need calm , we know you need calm.
+                    <strong>Sign up</strong> today and get more calm
+                </h3>
+            </div>
+            <div class="form-container">
                 <form id="submit-form" action="to my url" method="post">
                     
                     <div class="content">
@@ -35,7 +44,7 @@
                                 <input type="email" id="email" placeholder="johnDoe@example.com " required>
                             </li>
                         </ul>
-                        <ul>
+                        <ul style="list-style-type: none;">
                             <li>
                                 <label for="phone"> PHONE</label>
                                 <input type="text" id="phone" placeholder="000-0000000" required pattern="[0-9]{3}-[0-9]{7}">
@@ -52,13 +61,15 @@
                         </ul>
                     </div>
                 </form>
-            </div> 
-                
+            </div>
+            <div class="bottom-text">
                 <button type="submit" form="submit-form"><strong>Create Account</strong></button>
-        
+                already signed up? <a>log in here!</a>
+            </div>
+
         </div>
 
-        
+
     </div>
     
 </body>
