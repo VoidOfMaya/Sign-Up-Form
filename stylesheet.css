@@ -102,6 +102,7 @@ body{
 .right .bottom-text button:hover{
     background-color: #83a06a;
     font-weight: bolder;
+    cursor:pointer;
 }
 
 /*form control section*/
@@ -136,6 +137,9 @@ form input{
 }
 
 /*input validation styling*/
+input:hover{
+    cursor: pointer;
+}
 
 input:focus {
     outline-width: 0;
@@ -148,5 +152,14 @@ input:focus:valid{
 input:focus:invalid{
     border-color: red;
     
+}
+
+/*link styling*/
+a{
+    color:#596D48;
+}
+a:hover{
+    color: #83a06a;
+    cursor:pointer;
 }
 
